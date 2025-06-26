@@ -1,0 +1,114 @@
+{
+  "name": "LLM Memory Responder",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "1",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [200, 300]
+    },
+    {
+      "parameters": {
+        "filePath": "/data/ai-memory/logs/sample_log.txt"
+      },
+      "id": "2",
+      "name": "Read Memory Log",
+      "type": "n8n-nodes-base.readBinaryFile",
+      "typeVersion": 1,
+      "position": [400, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.openai.com/v1/chat/completions",
+        "method": "POST",
+        "authentication": "headerAuth",
+        "sendBody": true,
+        "headerParameters": [
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "name": "Authorization",
+            "value": "Bearer YOUR_OPENAI_KEY"
+          }
+        ],
+        "bodyParametersJson": "{
+  \"model\": \"gpt-4\",
+  \"messages\": [
+    {
+      \"role\": \"system\",
+      \"content\": \"You are a reflection assistant. Summarize this memory and identify the emotional tone.\"
+    },
+    {
+      \"role\": \"user\",
+      \"content\": \"={{$binary.data.toString()}}\"
+    }
+  ]
+}"
+      },
+      "id": "3",
+      "name": "Send to OpenAI",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [600, 300],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "YOUR_CREDENTIAL_ID",
+          "name": "OpenAI Auth"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "path": "/data/ai-memory/memory/parsed_response/response_summary.txt",
+        "data": "={{$json.choices[0].message.content}}"
+      },
+      "id": "4",
+      "name": "Save Response",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "typeVersion": 1,
+      "position": [800, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Read Memory Log",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Memory Log": {
+      "main": [
+        [
+          {
+            "node": "Send to OpenAI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send to OpenAI": {
+      "main": [
+        [
+          {
+            "node": "Save Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "version": 1
+}
