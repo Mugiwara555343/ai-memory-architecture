@@ -21,6 +21,20 @@ A simple Telegram → File workflow that listens for user input via Telegram bot
 
 ---
 
+### 🧠 `llm_memory_responder.json`
+Reads the latest memory log, sends the content to OpenAI (GPT-4), and saves a summarized emotional reflection to disk.
+
+**Nodes:**
+- `Manual Trigger`
+- `Read File`
+- `HTTP Request (OpenAI)`
+- `Write to File`
+
+Used to generate structured reflections or emotional insights from raw thoughts.
+
+
+
+
 ## 📁 File Structure
 
 ```plaintext
