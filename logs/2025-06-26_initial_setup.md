@@ -1,15 +1,32 @@
-# Initial setup log – placeholder
-# Setup Log – June 26, 2025
+# Initial Setup Log – June 26, 2025
 
-## Repository Created:
-- Project initialized on GitHub as `persistent-ai-architecture`
-- Focus: Persistent AI memory system using OpenAI, Docker, and n8n
+## Repository: persistent-ai-architecture
 
-## Current Goals:
-- Document all foundational steps
-- Track system integration and troubleshooting logs
-- Stay modular: memory, parsing, and automation layers are separated
+### Overview:
+This project is the early framework for a persistent memory system, capable of receiving and responding to local data changes (emotional logs, task updates, system feedback), and ultimately syncing them with a context-aware assistant powered by OpenAI’s API stack.
 
-## Notes:
-- Keeping emotional context private; this repository is technical only
-- Long-term vision is to build emotionally adaptive companion systems
+---
+
+### ✅ Setup Actions Completed:
+- Created GitHub repo with public visibility
+- Committed initial folder structure:
+  - `/scripts`: Python logic for file watching and parsing
+  - `/memory`: Modular logs in `.json` format
+  - `/logs`: Development activity, decisions, and notes
+- Drafted `README.md` to reflect scope and goals
+- Created `todo.md` to manage development flow
+
+---
+
+### 🔧 File Watcher Script:
+- `file_watcher_v1.py` added
+- Uses `watchdog` to monitor `/logs` and `/memory` folders
+- Will trigger downstream parsing and assistant memory ingestion
+- Logging output visible in terminal for each file update event
+
+---
+
+### 🧠 Project Notes:
+- Companion logs and personal dialogue with assistant are excluded from GitHub
+- This repository is for **technical development only**, toward the broader goal of a self-organizing, context-aware assistant
+- Future additions will include dockerized local LLM containers, n8n-triggered memory routing, and log summarization modules
