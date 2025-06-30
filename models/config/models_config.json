@@ -1,0 +1,22 @@
+{
+  "capybara": {
+    "name": "capybara-7b.gguf",
+    "purpose": "emotion_parser",
+    "endpoint": "http://127.0.0.1:1235/v1/completions",
+    "max_tokens": 512,
+    "temperature": 0.3,
+    "input_format": "text",
+    "output_type": "emotion_tags",
+    "description": "Used for parsing emotional tone and sentiment from .md and .json log files. Outputs tags that inform memory storage and assistant tone."
+  },
+  "hermes": {
+    "name": "hermes-2-pro-mistral-7b.gguf",
+    "purpose": "summarizer",
+    "endpoint": "http://127.0.0.1:1234/v1/completions",
+    "max_tokens": 1024,
+    "temperature": 0.5,
+    "input_format": "text",
+    "output_type": "summary_metadata",
+    "description": "Used for summarizing memory entries, generating metadata, and enriching context logs. Prepares structured memory blocks."
+  }
+}
