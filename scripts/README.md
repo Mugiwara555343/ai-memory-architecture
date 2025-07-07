@@ -1,27 +1,31 @@
-# 🧠 Script Modules – Core Memory Automation
+# 🧩 Scripts – Memory Core Modules
 
-This folder contains the core Python automation scripts powering the persistent AI memory system. Each script is modular, testable, and structured for local execution — ensuring privacy, reliability, and full system control.
+This folder houses all core automation scripts used in the persistent AI memory system. These scripts are organized into modular subfolders by function — interface, parsing, and file watching — to keep the architecture clean and extensible.
 
-These scripts handle real-time file watching, parsing, and memory log generation, forming the backend of a local LLM-powered architecture.
+## 🗂️ Subfolders
 
----
+### 📡 [`interface/`](./interface)
+Scripts that handle the user interface and model routing logic. Includes Gradio frontends, model selectors, and wrappers for streamlining I/O between models and memory modules.
 
-## 📜 Included Scripts
+### 🧠 [`parsers/`](./parsers)
+All memory parser scripts — each one transforms raw logs into structured `.json` and `.md` formats. Supports multi-model parsing, emotion tagging, summarization, and custom token formatting.
 
-| Script | Description |
-|--------|-------------|
-| `memory_parser.py` | Core parser for raw `.md` logs → structured `.json` and cleaned `.md` memory entries. |
-| `memory_parser_v1_full.py` | Experimental full-version parser with expanded tagging and metadata handling. |
-| `memory_watcher.py` | Original file watcher script using Watchdog to detect file changes and trigger parsing. |
-| `memory_watcher_fixed.py` | A more stable watcher variant with improved error handling and directory targeting. |
-| `memory_watcher_updated.py` | Current iteration of the watcher — actively maintained and integrated with the latest parser. |
-| `file_watcher_v1.py` | Legacy version; simple one-directory listener for quick prototyping. |
+### 🕊️ [`watchers/`](./watchers)
+Real-time filesystem listeners that detect changes in memory or log folders. Automatically trigger the appropriate parser when new content is added or edited.
 
 ---
 
-## 🔧 Dependencies
+## 📍 How It Connects
 
-Make sure to install these required libraries before running any scripts:
+1. **User writes a log** → saved to `logs/`
+2. **Watcher** detects the file and triggers a **parser**
+3. **Parser** creates structured `.json` and `.md` files in `memory/`
+4. **Interface** uses these to inject context into live AI interactions
 
-```bash
-pip install watchdog
+---
+
+## 🛠️ Notes
+
+- Each folder contains its own README with deeper details
+- Multiple versions are stored to allow testing different routing setups
+- Future plans incl
