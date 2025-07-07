@@ -1,16 +1,19 @@
-# 🧠 Memory Execution Flow – Local Model Test Walkthrough
+from pathlib import Path
+
+# Updated markdown content reflecting the use of text-generation-webui instead of LM Studio
+updated_md_content = """# 🧠 Memory Execution Flow – Local Model Test Walkthrough
 
 This document illustrates the local execution of a parsed memory entry within the AI architecture.  
 It walks through the memory file journey: from input log → parsing → model routing → interface response.
 
 ---
 
-## 🔹 Step 1: Local Model Starts via LM Studio
+## 🔹 Step 1: Local Model Starts via text-generation-webui
 
-The Capybara model is launched on port `5000` using LM Studio.  
+The Capybara model is launched on port `5000` using the Text Generation Web UI.  
 Configuration confirms use of `gguf`, GPU layers, and system specs.
 
-![Step 1 – LM Studio Model Startup](./images/step1_model_start.png)
+![Step 1 – Model Startup via Web UI](./images/step1_model_start.png)
 
 > ⚙️ Model: `capybara.Q6_K.gguf`  
 > 📍 Port: 5000
@@ -88,4 +91,10 @@ It proves that:
 
 > Want to test this yourself?  
 > See the scripts in `/model_router/`, the interface in `/interface/`, and memory examples in `/memory/`.
+"""
 
+# Define the new path to save
+file_path = Path("/mnt/data/docs_execution_flow_updated.md")
+file_path.write_text(updated_md_content)
+
+file_path.name  # Return file name for user download confirmation
