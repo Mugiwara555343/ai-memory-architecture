@@ -28,4 +28,9 @@ Real-time filesystem listeners that detect changes in memory or log folders. Aut
 
 - Each folder contains its own README with deeper details
 - Multiple versions are stored to allow testing different routing setups
-- Future plans incl
+- Future plans include config-based loading and version tracking
+
+---
+
+This structure allows the system to grow without becoming chaotic. Scripts are modular, replaceable, and ready for deeper automation workflows (e.g. `n8n`, `bash`, or LLM chaining).
+
