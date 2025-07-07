@@ -44,4 +44,12 @@ The user prompt is injected alongside the full memory context and passed to the 
 
 ---
 
-## St
+## Step 6: Router Chain and Model Launch
+
+![Step 6 - Router Chain Launch](./images/step6_router_chain.png)
+
+The model loads via Text Generation Web UI, exposes the OpenAI-compatible port, and begins local inference.
+
+---
+
+> 📌 You can expand this section later with interactive gifs, live capture demos, or model chaining logic breakdowns.
