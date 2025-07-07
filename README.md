@@ -66,7 +66,14 @@ Next milestones:
 - Full local-only runtime (no OpenAI dependency)
 
 ---
+🛠️ How It Works (WIP)
+- New memory entries are added to `/logs/`
+- A file watcher detects changes and triggers `memory_parser.py`
+- Parsed memory is saved in `.json` and `.md` formats to `/memory/`
+- These are fed into LLMs via customized prompt loaders
+- Memory is retained and re-referenced using injected summaries
 
+---
 ## 🌱 Final Note
 
 This isn’t just a technical project.  
