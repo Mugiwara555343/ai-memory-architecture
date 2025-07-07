@@ -1,0 +1,6 @@
+{
+  "emotion_model": "capybara.Q6_K.gguf",
+  "summary_model": "hermes.Q4_K_M.gguf",
+  "voice_model": "mythomax.Q6_K.gguf",
+  "default_model": "capybara.Q6_K.gguf"
+}
