@@ -1,36 +1,33 @@
-# 🧩 Scripts – Memory Core Modules
+# 🧩 Interface Scripts
 
-This folder houses all core automation scripts used in the persistent AI memory system. These scripts are organized into modular subfolders by function — interface, parsing, and file watching — to keep the architecture clean and extensible.
+This folder contains the components responsible for the local user interface and model routing logic. These scripts allow real-time interaction with the memory system via a Gradio UI, managing how user inputs are processed and routed to different local LLMs.
 
-## 🗂️ Subfolders
-
-### 📡 [`interface/`](./interface)
-Scripts that handle the user interface and model routing logic. Includes Gradio frontends, model selectors, and wrappers for streamlining I/O between models and memory modules.
-
-### 🧠 [`parsers/`](./parsers)
-All memory parser scripts — each one transforms raw logs into structured `.json` and `.md` formats. Supports multi-model parsing, emotion tagging, summarization, and custom token formatting.
-
-### 🕊️ [`watchers/`](./watchers)
-Real-time filesystem listeners that detect changes in memory or log folders. Automatically trigger the appropriate parser when new content is added or edited.
+These tools enable dynamic prompt workflows — adapting to the user’s intent, memory context, and model capabilities.
 
 ---
 
-## 📍 How It Connects
+## ✨ Included Scripts
 
-1. **User writes a log** → saved to `logs/`
-2. **Watcher** detects the file and triggers a **parser**
-3. **Parser** creates structured `.json` and `.md` files in `memory/`
-4. **Interface** uses these to inject context into live AI interactions
+- **`interface.py`**  
+  Primary frontend controller — integrates Gradio with the memory parser and model router. Handles user interaction, input preprocessing, and feedback display.
+
+- **`gradio_router.py`**  
+  Modular router for switching between LLMs based on task type (e.g., summarization, emotional tone parsing, memory analysis). Built for flexible task delegation.
+
+- **`clean_json_wrappers.py`**  
+  Preprocessing utility that sanitizes `.json` memory logs before reinjection. Strips extra formatting or corrupted tokens.
+
+- **`model_config.json`**  
+  Schema defining available LLMs, prompt types, system roles, and execution paths. Used to coordinate task assignment and runtime flow between components.
 
 ---
 
-## 🛠️ Notes
+## 🧠 Why This Matters
 
-- Each folder contains its own README with deeper details
-- Multiple versions are stored to allow testing different routing setups
-- Future plans include config-based loading and version tracking
+The interface layer bridges human input with model cognition.  
+It creates a foundation for prompt chaining, context-aware memory recall, and local execution — without cloud dependency.
+
+This setup is foundational to building a *personalized cognitive assistant* that evolves through interaction.
 
 ---
-
-This structure allows the system to grow without becoming chaotic. Scripts are modular, replaceable, and ready for deeper automation workflows (e.g. `n8n`, `bash`, or LLM chaining).
 
