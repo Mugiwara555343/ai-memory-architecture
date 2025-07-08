@@ -15,9 +15,9 @@ A living checklist of tasks, milestones, and architectural ideas for building a 
 ---
 
 ## 🔄 In Progress
-- [ ] Define memory schema in detail: required fields, validation rules
-- [ ] Begin parser module for `.json` and `.md` logs
-- [ ] Draft file change event → parsing → action pipeline
+- [x] Define memory schema in detail: required fields, validation rules
+- [x] Begin parser module for `.json` and `.md` logs
+- [x] Draft file change event → parsing → action pipeline
 - [ ] Outline companion assistant’s role in memory consumption and usage
 
 ---
