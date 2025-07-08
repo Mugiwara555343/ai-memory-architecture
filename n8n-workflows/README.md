@@ -1,43 +1,44 @@
+# 🔄 n8n Workflows
 
-# n8n Workflows
+This folder contains visual automation flows built with [n8n](https://n8n.io), designed to support the AI memory system by capturing user input, processing memory entries, and triggering LLM tasks in response.
 
-This folder contains visual automation flows created with [n8n](https://n8n.io), designed to support the AI memory system through input capture, memory processing, and LLM-triggered actions.
+These flows help extend the system’s reach — enabling real-time, mobile, or external memory updates.
 
 ---
 
-## 📤 Included Workflows
+## 📂 Included Workflows
 
 ### 🟢 `telegram_memory_logger.json`
-A simple Telegram → File workflow that listens for user input via Telegram bot and stores messages as `.txt` memory logs.
+A Telegram-to-file workflow that listens for user input via a Telegram bot and logs messages as `.txt` memory entries.
 
 **Nodes:**
-- `Telegram Trigger`: Listens for incoming messages
-- `Function`: Formats the message with timestamp
-- `Write to File`: Saves to a local memory log folder
+- `Telegram Trigger` – Listens for messages from Telegram
+- `Function` – Formats the message with timestamp and optional tag
+- `Write to File` – Saves the result to a local memory folder
 
 **Usage:**
-- Used to quickly capture thoughts, emotions, or entries on mobile
-- Connects directly to `file_watcher.py` for real-time parsing
+- Capture emotional or contextual updates from mobile
+- Log ideas, observations, or thoughts instantly
+- Automatically feed entries into `file_watcher.py` for downstream parsing
 
 ---
 
-### 🧠 `llm_memory_responder.json`
-Reads the latest memory log, sends the content to OpenAI (GPT-4), and saves a summarized emotional reflection to disk.
+### 🧠 `llm_memory_responder.json` *(in development)*
+Placeholder for an LLM-triggered response workflow. Will eventually support:
+- Auto-summarizing memory updates
+- Emotional tone detection
+- Telegram-based AI journaling responses
 
-**Nodes:**
-- `Manual Trigger`
-- `Read File`
-- `HTTP Request (OpenAI)`
-- `Write to File`
+---
 
-Used to generate structured reflections or emotional insights from raw thoughts.
+## 🌱 Planned Additions
 
+- Remote entry validation (e.g., filters or tag requirements)  
+- Feedback loop: receive model-generated reflections via Telegram  
+- Multi-step automation for voice-to-text or multi-modal logging
 
+---
 
+Even with only two JSONs, this folder tells a story: you’re not just working with local code — you’re thinking about **how real people will interface with it.**
 
-## 📁 File Structure
-
-```plaintext
-n8n-workflows/
-├── telegram_memory_logger.json
-└── [future_workflows].json
+Would you like to add an `.md` in this folder summarizing “How to Import an n8n Workflow,” or is this enough for now?
