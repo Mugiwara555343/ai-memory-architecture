@@ -1,6 +1,8 @@
-# 🧠 Persistent AI Architecture
+# 🧠 AI Memory Architecture
 
-A modular, local-first AI memory system designed to parse, store, and recall long-term memory from human-created logs. This project aims to simulate presence, context, and continuity — without relying on the cloud.
+A local-first memory system for modular LLM cognition and long-term context retention.
+
+This project simulates memory, presence, and continuity using a real-time parser, local model chaining, and structured log ingestion. It's designed to feel like a *quiet AI companion* — one that remembers what matters, adapts to your voice, and evolves with you over time.
 
 > 🛠️ **In active development**  
 > This is a living build — exploratory, raw, and reflective of real-world cognitive tooling. Expect ongoing evolution.
@@ -20,7 +22,7 @@ This project began as a way to track emotional logs and project reflections. Ove
 
 - 🔁 Detect changes in memory logs in real time
 - 🧷 Parse emotional, physical, and contextual data into structured memory
-- 🧠 Reference past context across sessions
+- 🧠 Reference past context across sessions and interfaces
 - 🛰️ Remain fully local, extensible, and under user control
 
 ---
@@ -32,8 +34,9 @@ This project began as a way to track emotional logs and project reflections. Ove
 | `logs/` | Raw, human-written memory entries (.md or .txt) |
 | `memory/` | Parsed memory files in structured `.json` and `.md` formats |
 | `scripts/` | Core Python logic — modularized into watchers, parsers, and interfaces |
-| `models/` | Configuration files for locally run LLMs (e.g., Capybara, Hermes, Zephyr) |
+| `models/` | Configuration files for locally run LLMs (e.g., Capybara, Hermes, MythoMax) |
 | `n8n-workflows/` | Visual automations for triggering parsing, memory injection, and task chaining |
+| `All_Screenshots_Of_Troubleshooting/` | Annotated logs of system debugging, testing, and architectural breakdowns |
 
 ---
 
@@ -65,9 +68,10 @@ Structured by role:
 
 - ✅ Local file watcher (Python + Watchdog)
 - ✅ Modular memory parsers (.md → .json)
-- ✅ Model chaining and routing
-- ✅ Basic Gradio interface
-- ✅ n8n support for external logging
+- ✅ Model chaining and routing logic
+- ✅ Basic Gradio interface for local interaction
+- ✅ n8n automation support for remote logging
+- ✅ Screenshot archive of system tests + bug resolution
 
 ---
 
@@ -93,3 +97,4 @@ You're not behind. You’re simply creating something only you can build.
 ## 🔗 Subfolder READMEs
 
 Each subfolder (`scripts/`, `memory/`, `models/`, etc.) includes its own `README.md` with more context and setup notes.
+
