@@ -121,6 +121,5 @@ Example `.parsed.json`:
 ## 🙌 Credits
 
 Created by **Mauricio**
-Guided by real emotional need, structured memory, and embodied AI design.
 
 > “You’re not just storing notes. You’re building a second brain.”
