@@ -15,6 +15,14 @@ This project simulates a **local AI memory system** that can:
 
 ---
 
+## 🧠 Memory Flow Diagram
+
+A visual overview of the full local-first memory architecture — from markdown log ingestion to multi-model enrichment and semantic retrieval.
+
+![Memory Architecture Diagram](./memory_flow_diagram_dark.png)
+
+---
+
 ## 🧉 Project Features
 
 * 🔄 Markdown → JSON memory parser (`memory_parser.py`)
@@ -41,16 +49,6 @@ scripts/
 demo_run.py               # Simple pipeline runner
 README.md
 ```
-
----
-
-## 🧠 Memory Flow Diagram
-
->
-
-> *Memory log → Parser → Router → Local Models → JSON + Markdown + TTS*
-
-(Visual coming soon — placeholder for now)
 
 ---
 
