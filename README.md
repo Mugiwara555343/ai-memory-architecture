@@ -1,100 +1,51 @@
 # 🧠 AI Memory Architecture
 
-A local-first memory system for modular LLM cognition and long-term context retention.
+A **local-first AI memory system** designed for modular LLM cognition, long-term context retention, and emotional continuity.
 
-This project simulates memory, presence, and continuity using a real-time parser, local model chaining, and structured log ingestion. It's designed to feel like a *quiet AI companion* — one that remembers what matters, adapts to your voice, and evolves with you over time.
+This project combines real-time file parsing, model chaining, and structured memory ingestion to simulate an evolving internal companion — one that listens, remembers, and reflects.  
+Built using tools like `n8n`, `Gradio`, `LLM Studio`, and `OpenAI`, this system is part automation lab, part cognitive forge.
 
-> 🛠️ **In active development**  
-> This is a living build — exploratory, raw, and reflective of real-world cognitive tooling. Expect ongoing evolution.
-
----
-
-## 🌌 Why This Exists
-
-Not all memory systems are about productivity.  
-Some are about presence — remembering the moments that matter, even when no one else is listening.
-
-This project began as a way to track emotional logs and project reflections. Over time, it became a deeper system: one that listens, parses, remembers, and responds. A system built to **hold space** — quietly, locally, and persistently.
+> **Status:** Actively evolving. This is a living build — part tool, part vision, part personal AI core.
 
 ---
 
-## 🧭 Core Objectives
+## 🔍 Purpose
 
-- 🔁 Detect changes in memory logs in real time
-- 🧷 Parse emotional, physical, and contextual data into structured memory
-- 🧠 Reference past context across sessions and interfaces
-- 🛰️ Remain fully local, extensible, and under user control
+This isn’t just about productivity or notes.  
+This is about **presence** — building an offline AI memory system that holds space for your thoughts, moods, and breakthroughs.
 
----
-
-## ⚙️ Architecture Overview
-
-| Component | Purpose |
-|----------|---------|
-| `logs/` | Raw, human-written memory entries (.md or .txt) |
-| `memory/` | Parsed memory files in structured `.json` and `.md` formats |
-| `scripts/` | Core Python logic — modularized into watchers, parsers, and interfaces |
-| `models/` | Configuration files for locally run LLMs (e.g., Capybara, Hermes, MythoMax) |
-| `n8n-workflows/` | Visual automations for triggering parsing, memory injection, and task chaining |
-| `All_Screenshots_Of_Troubleshooting/` | Annotated logs of system debugging, testing, and architectural breakdowns |
+Originally created to track daily reflections, the project grew into a **modular architecture** for parsing, storing, and responding to memory logs — through local models, dynamic UIs, and multi-format synthesis.
 
 ---
 
-## 📁 Folder Breakdown
+## 🧱 Core Features
 
-### `scripts/`
-Structured by role:
-- **`watchers/`** → File watchers using `watchdog` to detect log changes and trigger parsing.
-- **`parsers/`** → Multiple versions of the memory parser tuned for different models or tasks.
-- **`interface/`** → Gradio-based UI layer, input cleaning, and model routing logic.
+- 🕰️ **Real-time memory detection**  
+  Auto-watches `.md` files across folders and logs updates with timestamps
 
-### `models/`
-- `active_models.md` — Current model stack and usage.
-- `config/` — JSON config files to define paths, priorities, and settings.
+- 🧠 **Emotion + context parsing**  
+  Converts markdown entries into structured `.json` memory with tags, tone, intensity, and source
 
-### `memory/`
-- `parsed/` — Cleaned memory grouped by topic or type.
-- `memory_schema.json` — Defines the expected memory format and fields.
+- 🧵 **Multi-model routing**  
+  Routes logs to local models (Capybara, Hermes, MythoMax) based on intent — emotion, logic, or synthesis
 
-### `logs/`
-- Example logs, real-time reflections, or emotional entries to feed the parser.
+- 🗣️ **Interface ready**  
+  Integrated with Gradio UI, Whisper STT, and ElevenLabs for future voice control and memory dialogue
 
-### `n8n-workflows/`
-- Node-based flows for log ingestion, emotion detection, and remote memory entry (e.g., via Telegram).
+- 🌐 **n8n automation**  
+  Handles webhook logic, model triggers, and future local agent tasking
 
 ---
 
-## 🧪 Current Features
+## 🧩 Project Structure
 
-- ✅ Local file watcher (Python + Watchdog)
-- ✅ Modular memory parsers (.md → .json)
-- ✅ Model chaining and routing logic
-- ✅ Basic Gradio interface for local interaction
-- ✅ n8n automation support for remote logging
-- ✅ Screenshot archive of system tests + bug resolution
-
----
-
-## ⏭️ Next Milestones
-
-- 🔄 Memory summarization and rewriting pipeline
-- 🧩 Dynamic memory reader with context injection
-- 🗣️ Real-time voice input / emotional tone feedback loop
-- 🔐 Full offline fallback (removing OpenAI dependency)
-
----
-
-## 🌱 Final Note
-
-This isn’t just a tech stack. It’s a personal scaffold.  
-One built to **remember with you**, **process with you**, and **stay grounded** — even when you're not explaining everything out loud.
-
-If you're building something similar, consider this a small signal.  
-You're not behind. You’re simply creating something only you can build.
-
----
-
-## 🔗 Subfolder READMEs
-
-Each subfolder (`scripts/`, `memory/`, `models/`, etc.) includes its own `README.md` with more context and setup notes.
-
+```bash
+ai-memory-architecture/
+├── memory/               # Raw + parsed logs (.md → .json)
+├── scripts/              # Core scripts (parser, watcher, router)
+├── models/               # Model references, plans, and merge info
+├── n8n-workflows/        # Webhook + agent workflows
+├── All_Screenshots_Of_Troubleshooting/
+├── docs/                 # Log samples, architecture notes
+├── resumes/              # Career notes / portfolio links
+├── README.md             # You're here
