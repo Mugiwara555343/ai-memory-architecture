@@ -1,60 +1,60 @@
-# ðŸ§  AI Memory Architecture
+# 🧠 AI Memory Architecture
 
-> A modular memory brain that parses emotional logs, processes them with local LLMs, and returns both structured `.json` and stylized `.md` memory summaries. This repo showcases a complete offline pipeline â€” from Obsidian-style memory input to enriched AI output.
+> A modular memory brain that parses emotional logs, processes them with local LLMs, and returns both structured `.json` and stylized `.md` memory summaries. This repo showcases a complete offline pipeline — from Obsidian-style memory input to enriched AI output.
 
 ---
 
-## ðŸ“˜ Overview
+## 📘 Overview
 
 This project simulates a **local AI memory system** that can:
 
-- Parse and structure Markdown memory logs
-- Run those logs through a multi-model chain (Capybara â†’ Hermes â†’ MythoMax)
-- Output emotional summaries, tags, and narrative markdown logs
-- Optionally voice the output using ElevenLabs (or local TTS)
+* Parse and structure Markdown memory logs
+* Run those logs through a multi-model chain (Capybara → Hermes → MythoMax)
+* Output emotional summaries, tags, and narrative markdown logs
+* Optionally voice the output using ElevenLabs (or local TTS)
 
 ---
 
-## ðŸ§‰ Project Features
+## 🧉 Project Features
 
-- ðŸ”„ Markdown â†’ JSON memory parser (`memory_parser.py`)
-- ðŸ§  Capybara for emotional parsing
-- ðŸ§  Hermes for metadata and summarization
-- ðŸŽ­ MythoMax for voice and tone stylization
-- ðŸ“‚ Real-time memory file watcher (`memory_watcher.py`)
-- ðŸ“‹ Modular router for chaining models via ports
-- ðŸ–¥ï¸ Gradio interface (in progress)
-- ðŸ”Š Optional ElevenLabs voice output (planned)
+* 🔄 Markdown → JSON memory parser (`memory_parser.py`)
+* 🧠 Capybara for emotional parsing
+* 🧠 Hermes for metadata and summarization
+* 🎭 MythoMax for voice and tone stylization
+* 📂 Real-time memory file watcher (`memory_watcher.py`)
+* 📋 Modular router for chaining models via ports
+* 🖥️ Gradio interface (in progress)
+* 🔊 Optional ElevenLabs voice output (planned)
 
 ---
 
-## ðŸ”‡ Folder Structure
+## 🔇 Folder Structure
 
 ```
 memory/
-  â”œâ”€ markdown/            # Raw input logs (.md)
-  â”œâ”€ parsed/              # Output logs (.parsed.json)
+  ├─ markdown/            # Raw input logs (.md)
+  ├─ parsed/              # Output logs (.parsed.json)
 scripts/
-  â”œâ”€ memory_parser.py     # Parses raw logs into structured memory
-  â”œâ”€ model_router.py      # Routes parsed logs through model chain
-  â”œâ”€ memory_watcher.py    # Watches memory logs and triggers parser
+  ├─ memory_parser.py     # Parses raw logs into structured memory
+  ├─ model_router.py      # Routes parsed logs through model chain
+  ├─ memory_watcher.py    # Watches memory logs and triggers parser
 demo_run.py               # Simple pipeline runner
 README.md
 ```
 
 ---
 
-## ðŸ§  Memory Flow Diagram
+## 🧠 Memory Flow Diagram
 
 >
 
-> *Memory log â†’ Parser â†’ Router â†’ Local Models â†’ JSON + Markdown + TTS*
+> *Memory log → Parser → Router → Local Models → JSON + Markdown + TTS*
 
-(Visual coming soon â€” placeholder for now)
+(Visual coming soon — placeholder for now)
 
 ---
 
-## ðŸš€ How to Run
+## 🚀 How to Run
 
 1. Clone the repo:
 
@@ -77,15 +77,15 @@ pip install -r requirements.txt
 python demo_run.py
 ```
 
-Youâ€™ll see:
+You’ll see:
 
-- âœ… Parsed output saved
-- ðŸšš Routed to Capybara/Hermes/MythoMax
-- ðŸ§  Model output in terminal
+* ✅ Parsed output saved
+* 🚚 Routed to Capybara/Hermes/MythoMax
+* 🧠 Model output in terminal
 
 ---
 
-## ðŸ—‚ Sample Output
+## 🗂 Sample Output
 
 Example `.parsed.json`:
 
@@ -101,27 +101,26 @@ Example `.parsed.json`:
 
 ---
 
-## ðŸŒ± Roadmap
+## 🌱 Roadmap
 
--
-
----
-
-## ðŸ› ï¸ Tech Stack
-
-- Python 3.11
-- Local LLMs via LM Studio (GGUF models)
-- Gradio (interface)
-- FastAPI (local model server)
-- Watchdog (for file detection)
-- ElevenLabs (optional)
+*
 
 ---
 
-## ðŸ™Œ Credits
+## 🛠️ Tech Stack
 
-Created by **Mauricio**\
+* Python 3.11
+* Local LLMs via LM Studio (GGUF models)
+* Gradio (interface)
+* FastAPI (local model server)
+* Watchdog (for file detection)
+* ElevenLabs (optional)
+
+---
+
+## 🙌 Credits
+
+Created by **Mauricio**
 Guided by real emotional need, structured memory, and embodied AI design.
 
-> â€œYouâ€™re not just storing notes. Youâ€™re building a second brain.â€
-
+> “You’re not just storing notes. You’re building a second brain.”
