@@ -1,35 +1,50 @@
-# 🧠 AI Memory Architecture – System Overview
+# 🧠 Architecture Overview – AI Memory System
 
-This document provides a technical walkthrough of the AI Memory Architecture project, including its core components, data flow, model routing logic, and optional integrations (voice, UI, and image rendering). It complements the main `README.md` and is intended for developers, engineers, or recruiters interested in the system's inner workings.
+This document outlines the architecture behind the **AI Memory Architecture** project — a modular, local-first system designed for cognitive reflection, emotional processing, and long-term memory simulation using multi-model LLM chaining.
 
----
-
-## 🎯 System Goals
-
-- Create a **local-first memory system** that reacts to log changes in real time
-- Parse `.md` entries into **structured `.json` memory**, including tone, tags, and timestamps
-- Route logs through **modular LLMs** based on intent (emotion, logic, synthesis)
-- Enable **future expansion** into voice, visual, and agentic interactions — all offline
+The system is structured to scale across multiple interfaces, models, and sensory layers (voice, image, text), while remaining fully local, extensible, and privacy-preserving.
 
 ---
 
-## 🧩 Folder Breakdown
+## ⚙️ System Goals
 
-```bash
-memory/                # Contains raw .md logs and parsed .json outputs
-scripts/               # Core logic: watcher, parser, router
-models/                # Merge notes, model configs, download links
-n8n-workflows/         # JSON export of local automation flows (webhooks, triggers)
-docs/                  # Architecture notes, log samples, and process records
-resumes/               # Portfolio-related content and experience mapping
-All_Screenshots_.../   # Screenshot logs for debugging, testing, and reflection
+- Process human-readable `.md` logs into structured memory files (`.json`)
+- Parse emotional tone, intensity, and tags from daily reflections
+- Route memory logs to appropriate local models (emotion, logic, synthesis)
+- Enable real-time interaction via voice (Whisper + ElevenLabs)
+- Visualize logs through future scene renderers (ComfyUI)
+- Maintain a fully offline, scriptable, and modular stack
 
-----
+---
 
-Obsidian Vault → memory_watcher.py → memory_parser.py
+## 📁 Folder Roles
+
+| Folder                  | Purpose |
+|------------------------|---------|
+| `memory/`              | Raw and parsed logs, including structured `.json` memory files |
+| `scripts/`             | Core Python tools: watcher, parser, model router |
+| `models/`              | Model metadata, merge plans, config notes |
+| `n8n-workflows/`       | Webhook triggers, local agent task flows, and automation |
+| `docs/`                | Architecture notes, sample logs, reflections |
+| `resumes/`             | Professional profile documents |
+| `All_Screenshots_Of_Troubleshooting/` | Categorized debugging gallery with implementation proof |
+
+---
+
+## 🧩 System Pipeline (Flow)
+
+```text
+Markdown Logs (.md)
        ↓
-    memory/*.parsed.json → saved + timestamped
+memory_watcher.py
        ↓
-    model_router.py decides model path (emotion, logic, synthesis)
+memory_parser.py
+→ Parses title, tags, emotion, tone, summary
+→ Outputs clean .parsed.json file with timestamp + metadata
        ↓
-    Output sent to Gradio UI, voice interface, or stored locally
+model_router.py
+→ Capybara (emotional), Hermes (logical), MythoMax (synthesis)
+→ Future integration: DantesPeak-36B, Janus-MOE, Mythical-LMs
+       ↓
+Local Model Output
+→ Gradio UI (text), ElevenLabs (voice), ComfyUI (visual)
