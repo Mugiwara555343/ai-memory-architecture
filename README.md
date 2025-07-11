@@ -19,9 +19,9 @@ This project simulates a **local AI memory system** that can:
 
 A visual overview of the full local-first memory architecture — from markdown log ingestion to multi-model enrichment and semantic retrieval.
 
-[![Memory Architecture Diagram](./memory_flow_diagram_dark.png)](./memory_flow_diagram_dark.png)
-
-[![Alternate Dark Diagram](./memory_flow_diagram_dark(2).png)](./memory_flow_diagram_dark(2).png)
+[![Memory Architecture Simple Diagram](./memory_flow_diagram_dark(2).png)](./memory_flow_diagram_dark(2).png)
+[![Legen/Key](./Legend_Key.png)](./Legend_Key.png)
+[![First Draft Diagram](./memory_flow_diagram_dark.png)](./memory_flow_diagram_dark.png)
 
 
 ---
