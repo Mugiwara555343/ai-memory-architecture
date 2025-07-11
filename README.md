@@ -15,12 +15,12 @@ This project simulates a **local AI memory system** that can:
 
 ---
 
-## 🧠 Memory Flow Diagram
+## 🧠 Memory Flow Diagrams
 
-A visual overview of the full local-first memory architecture — from markdown log ingestion to multi-model enrichment and semantic retrieval.
+A visual overview of the full local-first memory architecture — from markdown log ingestion to multi-model enrichment and semantic retrieval. There are two versions, a polished simplified and I created as a draft but both are up for visualization. A legend is also provided for context.
 
 [![Memory Architecture Simple Diagram](./memory_flow_diagram_dark(2).png)](./memory_flow_diagram_dark(2).png)
-[![Legen/Key](./Legend_Key.png)](./Legend_Key.png)
+[![Legend/Key](./Legend_Key.png)](./Legend_Key.png)
 [![First Draft Diagram](./memory_flow_diagram_dark.png)](./memory_flow_diagram_dark.png)
 
 
