@@ -22,7 +22,7 @@ The Gradio interface displays the loaded memory JSON, extracted summary, tags, e
 
 ## Step 3: Parsed JSON Output View
 
-![Step 3 - Terminal JSON Preview](./images/step3_terminal_run.png)
+![Step 3 - Terminal JSON Preview](../docs/images/step3_terminal_run.png)
 
 Raw `.parsed.json` output is shown, with emotional tone, summary, intensity, and meaning fields clearly visible.
 
@@ -30,7 +30,7 @@ Raw `.parsed.json` output is shown, with emotional tone, summary, intensity, and
 
 ## Step 4: Gradio Prompt Interface
 
-![Step 4 - Gradio Prompt UI](./images/step4_gradio_ui.png)
+![Step 4 - Gradio Prompt UI](../docs/images/step4_gradio_ui.png)
 
 The user prompt is injected alongside the full memory context and passed to the LLM — output appears on the right pane.
 
@@ -38,7 +38,7 @@ The user prompt is injected alongside the full memory context and passed to the 
 
 ## Step 5: Prompt Injection Code Snippet
 
-![Step 5 - Prompt Injection Script](./images/step5_prompt_injection.png)
+![Step 5 - Prompt Injection Script](../docs/images/step5_prompt_injection.png)
 
 `gradio_router.py` uses the `router_sequence.json` to route prompts to specific models and parse memory payloads.
 
@@ -46,7 +46,7 @@ The user prompt is injected alongside the full memory context and passed to the 
 
 ## Step 6: Router Chain and Model Launch
 
-![Step 6 - Router Chain Launch](./images/step6_router_chain.png)
+![Step 6 - Router Chain Launch](../docs/images/step6_router_chain.png)
 
 The model loads via Text Generation Web UI, exposes the OpenAI-compatible port, and begins local inference.
 
