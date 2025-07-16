@@ -16,10 +16,10 @@ This folder contains hardware photos, BIOS captures, and hands-on diagnostics fr
 
 ## 📸 Embedded Screenshots
 
-### 🔧 No Power Button No Problem :)
+### 🔧 No Power Button, No Problem :)
 [![Memory Architecture Simple Diagram](../Hardware_Fun/Images/IMG_7681.jpeg)](../Hardware_Fun/Images/IMG_7681.jpeg)
 
-### Please don't judge my AIO placement :}, my currentcase does not allow it within, so I had to improvise, and saw drastic temp drops. (Dont mind the vape ;D)
+### 🔥 Please don't judge my AIO placement :}, my currentcase does not allow it within, so I had to improvise, and saw drastic temp drops. (Dont mind the vape ;D)
 [![Memory Architecture Simple Diagram](../Hardware_Fun/Images/IMG_7742.jpeg)](../Hardware_Fun/Images/IMG_7742.jpeg)
 
 ## 📁 Folder Purpose
