@@ -2,7 +2,7 @@
 
 > A modular AI system that reflects, summarizes, and stylizes your memory — using local language models chained together in a persistent, privacy-first pipeline.
 
-Built as a **personal cognitive architecture**, this project processes Obsidian-style `.md` logs and transforms them into structured `.json` snapshots and stylized `.md` narratives. All locally, no cloud required.
+Built as a **personal cognitive architecture**, this project processes Obsidian-style `.md` logs and transforms them into structured `.json` snapshots and stylized `.md` narratives. All locally, no cloud required using LLMs to get to enriched AI output.
 
 👉 [Try my custom GPT assistant](https://chat.openai.com/g/g-XXXXX)
 It helps coordinate the models and memory flow behind this repo.
@@ -14,7 +14,7 @@ It helps coordinate the models and memory flow behind this repo.
 * Watches `.md` logs for changes and parses them into structured `.json`
 * Routes parsed memory through a **multi-model LLM chain**:
 
-  * 🐹 Capybara → tags & emotions
+  * 🤍 Capybara → tags & emotions
   * 🧠 Hermes → summary metadata
   * 🎭 MythoMax → Markdown stylization
 * Optionally pipes output into TTS (e.g., ElevenLabs) or future dashboards
@@ -33,9 +33,9 @@ It helps coordinate the models and memory flow behind this repo.
 
 ```
 memory/                # Human logs + parsed memory snapshots
-scripts/               # Core processors + routers
+scripts/               # Core processors(parser.py and watcher.py) + routers
 n8n-workflows/         # Workflow automation (optional)
-models/                # GGUF local models (Capybara, Hermes, etc.)
+docs/                  # Progress reports, brainstorming, anything really
 ```
 
 ---
@@ -44,9 +44,7 @@ models/                # GGUF local models (Capybara, Hermes, etc.)
 
 ```bash
 git clone https://github.com/Mugiwara555343/ai-memory-architecture.git
-cd ai-memory-architecture
-pip install -r requirements.txt
-python demo_run.py
+WORKING ON IT
 ```
 
 ✅ Markdown gets parsed
