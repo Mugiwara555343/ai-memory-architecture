@@ -6,7 +6,7 @@ This folder contains all the GGUF-format models I have downloaded, tested, and r
 
 ## 📸 Model Snapshot
 
-![Model Inventory](./docs/images/Screenshot-173218.png)
+[![Model Inventory](./docs/images/Screenshot-173218.png)](./docs/images/Screenshot-173218.png)
 
 ---
 
