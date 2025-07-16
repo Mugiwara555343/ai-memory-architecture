@@ -17,7 +17,7 @@ This folder contains hardware photos, BIOS captures, and hands-on diagnostics fr
 ## 📸 Embedded Screenshots
 
 ### 🔧 No Power Button No Problem :)
-[![Memory Architecture Simple Diagram](../All_Screenshots_Of_Troubleshooting/Hardware_Fun/Images/IMG_7681.jpeg)](../All_Screenshots_Of_Troubleshooting/Hardware_Fun/Images/IMG_7681.jpeg)
+[![Memory Architecture Simple Diagram](../Hardware_Fun/Images/IMG_7681.jpeg)](../Hardware_Fun/Images/IMG_7681.jpeg)
 ### 🖼️ Additional Diagnostics
 
 ---
