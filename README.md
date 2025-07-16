@@ -24,7 +24,7 @@ It helps coordinate the models and memory flow behind this repo.
 ## 🧠 Visual Flow
 
 [![Memory Architecture Simple Diagram](./All_Screenshots_Of_Troubleshooting/memory_flow_diagram_dark(2).png)](./All_Screenshots_Of_Troubleshooting/memory_flow_diagram_dark(2).png)
-[![First Draft Diagram](./memory_flow_diagram_dark.png)](./memory_flow_diagram_dark.png)
+[![First Draft Diagram](./All_Screenshots_Of_Troubleshooting/memory_flow_diagram_dark.png)](./All_Screenshots_Of_Troubleshooting/memory_flow_diagram_dark.png)
 *A visual of the full offline memory chain — from raw journal to reflective output*
 
 ---
