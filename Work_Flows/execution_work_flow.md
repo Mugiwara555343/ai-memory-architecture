@@ -6,7 +6,7 @@ This section illustrates the step-by-step execution of the persistent AI archite
 
 ## Step 1: Model Invocation via Terminal
 
-![Step 1 - Model Start](./images/step1_model_start.png)
+![Step 1 - Model Start](../images/step1_model_start.png)
 
 Terminal command executes `model_router.py`, targeting a `.parsed.json` memory file and feeding it into the selected model (Capybara).
 
