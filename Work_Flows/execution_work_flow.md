@@ -6,7 +6,7 @@ This section illustrates the step-by-step execution of the persistent AI archite
 
 ## Step 1: Model Invocation via Terminal
 
-![Step 1 - Model Start](../images/step1_model_start.png)
+![Step 1 - Model Start](../docs/images/step1_model_start.png)
 
 Terminal command executes `model_router.py`, targeting a `.parsed.json` memory file and feeding it into the selected model (Capybara).
 
@@ -14,7 +14,7 @@ Terminal command executes `model_router.py`, targeting a `.parsed.json` memory f
 
 ## Step 2: Memory File Loaded in Gradio UI
 
-![Step 2 - Parsed Memory JSON](./images/step2_parsed_memory_json.png)
+![Step 2 - Parsed Memory JSON](../docs/images/step2_parsed_memory_json.png)
 
 The Gradio interface displays the loaded memory JSON, extracted summary, tags, emotional tone, and key meaning structures.
 
