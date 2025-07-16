@@ -4,7 +4,7 @@
 
 Built as a **personal cognitive architecture**, this project processes Obsidian-style `.md` logs and transforms them into structured `.json` snapshots and stylized `.md` narratives. All locally, no cloud required using LLMs to get to enriched AI output.
 
-👉 [Try my custom GPT assistant](https://chat.openai.com/g/g-XXXXX)
+👉 [Try my custom GPT assistant](https://chatgpt.com/g/g-686d56d1a8048191bd32fdb5704d2eb4-memoryarchitect-gpt?model=o4-mini)
 It helps coordinate the models and memory flow behind this repo.
 
 ---
