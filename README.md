@@ -1,125 +1,94 @@
 # 🧠 AI Memory Architecture
 
-> A modular memory brain that parses emotional logs, processes them with local LLMs, and returns both structured `.json` and stylized `.md` memory summaries. This repo showcases a complete offline pipeline — from Obsidian-style memory input to enriched AI output.
+> A modular AI system that reflects, summarizes, and stylizes your memory — using local language models chained together in a persistent, privacy-first pipeline.
+
+Built as a **personal cognitive architecture**, this project processes Obsidian-style `.md` logs and transforms them into structured `.json` snapshots and stylized `.md` narratives. All locally, no cloud required.
+
+👉 [Try my custom GPT assistant](https://chat.openai.com/g/g-XXXXX)
+It helps coordinate the models and memory flow behind this repo.
 
 ---
 
-## 📘 Overview
+## 🔍 What It Does
 
-This project simulates a **local AI memory system** that can:
+* Watches `.md` logs for changes and parses them into structured `.json`
+* Routes parsed memory through a **multi-model LLM chain**:
 
-* Parse and structure Markdown memory logs
-* Run those logs through a multi-model chain (Capybara → Hermes → MythoMax)
-* Output emotional summaries, tags, and narrative markdown logs
-* Optionally voice the output using ElevenLabs (or local TTS)
-
----
-
-## 🧠 Memory Flow Diagrams
-
-A visual overview of the full local-first memory architecture — from markdown log ingestion to multi-model enrichment and semantic retrieval. There are two versions, a polished simplified and one I created as a draft but both are up for visualization. A legend is also provided for context.
-
-[![Memory Architecture Simple Diagram](./memory_flow_diagram_dark(2).png)](./memory_flow_diagram_dark(2).png)
-[![First Draft Diagram](./memory_flow_diagram_dark.png)](./memory_flow_diagram_dark.png)
-
+  * 🐹 Capybara → tags & emotions
+  * 🧠 Hermes → summary metadata
+  * 🎭 MythoMax → Markdown stylization
+* Optionally pipes output into TTS (e.g., ElevenLabs) or future dashboards
 
 ---
 
-## 🧉 Project Features
+## 🧠 Visual Flow
 
-* 🔄 Markdown → JSON memory parser (`memory_parser.py`)
-* 🧠 Capybara for emotional parsing
-* 🧠 Hermes for metadata and summarization
-* 🎭 MythoMax for voice and tone stylization
-* 📂 Real-time memory file watcher (`memory_watcher.py`)
-* 📋 Modular router for chaining models via ports
-* 🖥️ Gradio interface (in progress)
-* 🔊 Optional ElevenLabs voice output (planned)
+
+*A visual of the full offline memory chain — from raw journal to reflective output*
 
 ---
 
-## 🔇 Folder Structure
+## 📂 Folder Overview
 
 ```
-memory/
-  ├─ markdown/            # Raw input logs (.md)
-  ├─ parsed/              # Output logs (.parsed.json)
-scripts/
-  ├─ memory_parser.py     # Parses raw logs into structured memory
-  ├─ model_router.py      # Routes parsed logs through model chain
-  ├─ memory_watcher.py    # Watches memory logs and triggers parser
-demo_run.py               # Simple pipeline runner
-README.md
+memory/                # Human logs + parsed memory snapshots
+scripts/               # Core processors + routers
+n8n-workflows/         # Workflow automation (optional)
+models/                # GGUF local models (Capybara, Hermes, etc.)
 ```
 
 ---
 
-## 🚀 How to Run
-
-1. Clone the repo:
+## ⚙️ How to Run
 
 ```bash
 git clone https://github.com/Mugiwara555343/ai-memory-architecture.git
 cd ai-memory-architecture
-```
-
-2. Install dependencies:
-
-```bash
 pip install -r requirements.txt
-```
-
-3. Start your local model server (Capybara, etc.) using LM Studio or WebUI.
-
-4. Run the full pipeline:
-
-```bash
 python demo_run.py
 ```
 
-You’ll see:
-
-* ✅ Parsed output saved
-* 🚚 Routed to Capybara/Hermes/MythoMax
-* 🧠 Model output in terminal
+✅ Markdown gets parsed
+🧠 Models run in sequence
+📄 Output: `.parsed.json` + stylized `.md` in terminal
 
 ---
 
-## 🗂 Sample Output
-
-Example `.parsed.json`:
+## 📆 Example Output
 
 ```json
 {
   "title": "First Encounter with Memory Core",
   "summary": "Reflective log capturing emotional tension and resolve.",
   "tags": ["memory", "emotion", "introspection"],
-  "emotions": {"calm": 0.6, "anxious": 0.4},
-  "plain_text": "Today I..."
+  "emotions": {"calm": 0.6, "anxious": 0.4}
 }
 ```
 
 ---
 
-## 🌱 Roadmap
+## 🧱 Roadmap (Active)
 
 *
 
 ---
 
-## 🛠️ Tech Stack
+## 👷️‍♂️ Tech Stack
 
 * Python 3.11
-* Local LLMs via LM Studio (GGUF models)
-* Gradio (interface)
-* FastAPI (local model server)
-* Watchdog (for file detection)
-* ElevenLabs (optional)
+* llama.cpp (`llama-cpp-python`)
+* FastAPI + Gradio
+* n8n (optional workflow glue)
+* Watchdog (live file watching)
+* ElevenLabs (optional TTS)
 
 ---
 
-## 🙌 Credits
+## 🙌 Creator
 
-Created by **Mauricio**
+Built by **Mauricio Ventura**
+AI Systems Builder | Automation Architect
 
-> “You’re not just storing notes. You’re building a second brain.”
+> “Not just a note-taker — a local-first second brain.”
+
+---
