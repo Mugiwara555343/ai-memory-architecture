@@ -1,7 +1,7 @@
 # 🧠 Local LLM Models
 
 This folder contains all the GGUF-format models I have downloaded, tested, and run locally as part of my AI architecture projects. These models are used across various interfaces and tasks including memory parsing, emotional tuning, summarization, and agent-style conversations. 
-(PS: Models are not currenlty within GitRepo, copy and paste names into Huggingface to find each)
+  (PS: Models are not currenlty within GitRepo, copy and paste names into Huggingface to find each)
 
 ---
 
