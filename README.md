@@ -9,6 +9,20 @@ It helps coordinate the models and memory flow behind this repo.
 
 ---
 
+## 📚 Table of Contents
+
+- [What It Does](#-what-it-does)
+- [Visual Flow](#-visual-flow)
+- [AI Memory Workflow Showcase](#-ai-memory-workflow-showcase)
+- [Folder Overview](#-folder-overview)
+- [How to Run](#-how-to-run)
+- [Example Output](#-example-output)
+- [Roadmap](#-roadmap)
+- [Tech Stack](#-tech-stack)
+- [Creator](#-creator)
+
+---
+
 ## 🔍 What It Does
 
 * Watches `.md` logs for changes and parses them into structured `.json`
