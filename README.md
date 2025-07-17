@@ -44,14 +44,14 @@ A journal entry (`.md`) is created in `memory_core/02_Training_&_Discipline`. Th
 
 ### 2. 🔁 Watcher + Parser Activated
 
-![Watcher Trigger](../docs/images/Screenshot-2025-07-12-213427.png)  
+![Watcher Trigger](./docs/images/Screenshot-2025-07-12-213427.png)  
 The file watcher logs activity: detecting the new `.md` file, parsing it, and routing it through the `router_sequence.json`. Parsed `.json` and `.parsed.md` files are generated and stored.
 
 ---
 
 ### 3. 🧠 Multi-Model Inference Begins
 
-![Model Chaining](../docs/images/Screenshot-2025-07-12-040512.png)  
+![Model Chaining](./docs/images/Screenshot-2025-07-12-040512.png)  
 The pipeline routes the parsed memory through 3 local LLMs:
 - **Capybara** extracts emotions + tags  
 - **Hermes** generates semantic summaries  
@@ -63,14 +63,14 @@ Each model runs in its own session with detailed log output.
 
 ### 4. 📄 Structured Output Produced
 
-![Parsed JSON Output](../docs/images/Screenshot-2025-07-12-114321.png)  
+![Parsed JSON Output](./docs/images/Screenshot-2025-07-12-114321.png)  
 A `.parsed.json` is created with tags, tone, meaning, and quotes — plus a stylized Markdown file showing the enhanced narrative. This allows both human and machine-readable outputs to coexist.
 
 ---
 
 ### 5. ⚠️ Error Handling (Capybara Timeout)
 
-![Model Error & Fallback](../docs/images/Screenshot-2025-07-12-202332.png)  
+![Model Error & Fallback](./docs/images/Screenshot-2025-07-12-202332.png)  
 If a model fails (e.g., no valid JSON from MythoMax), the system logs a warning and continues with a fallback. This ensures resilience and recovery without manual intervention.
 
 ---
