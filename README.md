@@ -21,7 +21,7 @@ It helps coordinate the models and memory flow behind this repo.
 
 ---
 
-## 🧠 Visual Flow
+## 📊Visual Flow
 
 [![Memory Architecture Simple Diagram](./docs/memory_flow_diagram_dark(2).png)](./docs/memory_flow_diagram_dark(2).png)
 [![First Draft Diagram](./docs/memory_flow_diagram_dark.png)](./docs/memory_flow_diagram_dark.png)
