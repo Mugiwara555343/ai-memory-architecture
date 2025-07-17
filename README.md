@@ -29,6 +29,56 @@ It helps coordinate the models and memory flow behind this repo.
 
 ---
 
+## 🧠 AI Memory Workflow Showcase
+
+This section visually documents the real-time behavior of the local AI memory system — from journal creation to model parsing and multi-step inference. Each screenshot shows a critical step in how memory is detected, routed, and transformed by local language models in a modular chain.
+
+---
+
+### 1. ✍️ Memory Entry Logged
+
+![Memory Entry](./docs/images/Screenshot-2025-07-12-035005.png)  
+A journal entry (`.md`) is created in `memory_core/02_Training_&_Discipline`. This triggers the `memory_watcher.py`, which detects file changes automatically.
+
+---
+
+### 2. 🔁 Watcher + Parser Activated
+
+![Watcher Trigger](./docs/images/Screenshot-2025-07-12-213427.png)  
+The file watcher logs activity: detecting the new `.md` file, parsing it, and routing it through the `router_sequence.json`. Parsed `.json` and `.parsed.md` files are generated and stored.
+
+---
+
+### 3. 🧠 Multi-Model Inference Begins
+
+![Model Chaining](./docs/images/Screenshot-2025-07-12-040512.png)  
+The pipeline routes the parsed memory through 3 local LLMs:
+- **Capybara** extracts emotions + tags  
+- **Hermes** generates semantic summaries  
+- **MythoMax** stylizes and enhances the final `.md` narrative  
+
+Each model runs in its own session with detailed log output.
+
+---
+
+### 4. 📄 Structured Output Produced
+
+![Parsed JSON Output](./docs/images/Screenshot-2025-07-12-114321.png)  
+A `.parsed.json` is created with tags, tone, meaning, and quotes — plus a stylized Markdown file showing the enhanced narrative. This allows both human and machine-readable outputs to coexist.
+
+---
+
+### 5. ⚠️ Error Handling (Capybara Timeout)
+
+![Model Error & Fallback](./docs/images/Screenshot-2025-07-12-202332.png)  
+If a model fails (e.g., no valid JSON from MythoMax), the system logs a warning and continues with a fallback. This ensures resilience and recovery without manual intervention.
+
+---
+
+> This memory pipeline is fully offline and modular — a living architecture that turns raw thought into structured cognition. Built entirely with local tools.
+
+---
+
 ## 📂 Folder Overview
 
 ```
