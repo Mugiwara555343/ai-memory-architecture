@@ -37,7 +37,7 @@ This section visually documents the real-time behavior of the local AI memory sy
 
 ### 1. ✍️ Memory Entry Logged
 
-![Memory Entry](../docs/images/Screenshot-2025-07-12-035005.png)  
+![Memory Entry](./docs/images/Screenshot-2025-07-12-035005.png)  
 A journal entry (`.md`) is created in `memory_core/02_Training_&_Discipline`. This triggers the `memory_watcher.py`, which detects file changes automatically.
 
 ---
