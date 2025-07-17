@@ -16,7 +16,7 @@ These screenshots were taken during live debugging sessions using `memory_watche
 
 ### 1️⃣ Capybara JSON Error — Model Failure Caught by Watcher
 
-![Capybara JSON error](../all_parser_troubleshoot/Images/Screenshot-2025-06-27-23202444.png)
+![Capybara JSON error](../01_Parser_Troubleshoot/Images/Screenshot-2025-06-27-23202444.png)
 
 This error was triggered by invalid JSON output from the Capybara model. The parser detected malformed formatting and wrote an error block to `.parsed.json`, preserving the raw response for later debugging. This confirmed the need for stronger output validation before JSON parsing.
 
@@ -24,7 +24,7 @@ This error was triggered by invalid JSON output from the Capybara model. The par
 
 ### 2️⃣ Debugging Instincts — Emotional Pattern Parsing
 
-![Debugging Instincts JSON](../all_parser_troubleshoot/Images/Screenshot-2025-06-27-232647.png)
+![Debugging Instincts JSON](../01_Parser_Troubleshoot/Images/Screenshot-2025-06-27-232647.png)
 
 This parsed log captures an emergent behavior: **recognizing redundant parsing loops and rhythm disruption**. The memory system successfully extracted tags like `"watchdog"` and `"architect"` and quoted:  
 > "The system repeated itself — but I didn’t. I noticed, I adapted, and I moved forward cleaner."
@@ -33,7 +33,7 @@ This parsed log captures an emergent behavior: **recognizing redundant parsing l
 
 ### 3️⃣ Rhythmic Recovery — Full Parse of Reflective Log
 
-![Training Rhythm + Recovery JSON](../all_parser_troubleshoot/Images/Screenshot-2025-06-27-233954.png)
+![Training Rhythm + Recovery JSON](../01_Parser_Troubleshoot/Images/Screenshot-2025-06-27-233954.png)
 
 A detailed example of a **clean parse cycle**. The entry reflects on recovery, training, and embodied insight. Emotional tone, tags, and quotes were successfully injected into `.parsed.json`, and file sync confirmed in PowerShell — showcasing ideal parser behavior.
 
