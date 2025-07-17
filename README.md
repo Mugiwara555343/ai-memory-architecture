@@ -116,9 +116,16 @@ WORKING ON IT
 
 ---
 
-## 🧱 Roadmap (Active)
 
-*
+## 🧱 Roadmap
+
+- [x] Real-time file watcher for memory logs
+- [x] Multi-model routing via router_sequence.json
+- [x] Parsed `.json` and `.parsed.md` output
+- [ ] Visual dashboards for memory summaries
+- [ ] Live voice interaction (ElevenLabs + Whisper)
+- [ ] Emotion-state memory chaining
+
 
 ---
 
