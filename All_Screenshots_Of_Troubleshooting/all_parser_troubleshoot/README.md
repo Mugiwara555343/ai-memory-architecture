@@ -16,7 +16,7 @@ These screenshots were taken during live debugging sessions using `memory_watche
 
 ### 1️⃣ Capybara JSON Error — Model Failure Caught by Watcher
 
-![Capybara JSON error](./Screenshot-2025-06-27-232024444.png)
+![Capybara JSON error](../all_parser_troubleshoot/Images/Screenshot-2025-06-27-23202444.png)
 
 This error was triggered by invalid JSON output from the Capybara model. The parser detected malformed formatting and wrote an error block to `.parsed.json`, preserving the raw response for later debugging. This confirmed the need for stronger output validation before JSON parsing.
 
