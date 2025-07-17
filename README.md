@@ -1,4 +1,4 @@
-# AI Memory Architecture
+# **AI Memory Architecture**
 
 > A modular AI system that reflects, summarizes, and stylizes your memory — using local language models chained together in a persistent, privacy-first pipeline.
 
