@@ -1,4 +1,4 @@
-# 🧪 AI Memory Architecture – Demo Modules
+# 🧪 AMA – Demo Modules
 
 This folder contains standalone demos and test modules pulled from the full AI Memory system.
 
