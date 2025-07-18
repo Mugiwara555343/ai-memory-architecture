@@ -45,8 +45,8 @@ def run_parser(src):
     if result.returncode == 0:
         print(result.stdout.strip())
     else:
-        print(f"❌ Parser error for {src.name}:
-{result.stderr.strip()}")
+        # Preserve newline in output while keeping string on one line
+        print(f"❌ Parser error for {src.name}:\n{result.stderr.strip()}")
 
 class Handler(FileSystemEventHandler):
     def on_modified(self, event):
