@@ -15,7 +15,7 @@ It helps coordinate the models and memory flow behind this repo.
 - [Visual Flow](#-visual-flow)
 - [AI Memory Workflow Showcase](#-ai-memory-workflow-showcase)
 - [Folder Overview](#-folder-overview)
-- [How to Run](#-how-to-run)
+- [How To Run](#-how-to-run)
 - [Example Output](#-example-output)
 - [Roadmap](#-roadmap)
 - [Tech Stack](#-tech-stack)
@@ -104,7 +104,7 @@ docs/                  # Progress reports, brainstorming, anything really
 
 ---
 
-## ⚙️ How to Run
+## ⚙️ How To Run
 
 ```bash
 git clone https://github.com/Mugiwara555343/ai-memory-architecture.git
@@ -146,6 +146,10 @@ WORKING ON IT
 ## 👷️‍♂️ Tech Stack
 
 * Python 3.11
+* LM Studio
+* Ollama
+* Git
+* Text-Web-UI
 * llama.cpp (`llama-cpp-python`)
 * FastAPI + Gradio
 * n8n (optional workflow glue)
@@ -154,11 +158,10 @@ WORKING ON IT
 
 ---
 
-## 🙌 Creator
+## Creator
 
 Built by **Mauricio Ventura**
 AI Systems Builder | Automation Architect
 
-> “Not just a note-taker — a local-first second brain.”
 
 ---
