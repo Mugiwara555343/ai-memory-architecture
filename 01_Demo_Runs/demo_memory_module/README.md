@@ -27,7 +27,7 @@ You can:
 
 ```bash
 git clone https://github.com/Mugiwara555343/ai-memory-architecture.git
-cd ai-memory-architecture/04_Demo_Runs/demo_memory_module
+cd your/path/chosen/ai-memory-architecture/01_Demo_Runs/demo_memory_module
 ```````
 
 ### 2. Manual Parse (Run Once)
