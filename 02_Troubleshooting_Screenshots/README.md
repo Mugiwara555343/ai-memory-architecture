@@ -1,4 +1,4 @@
-# AI Memory Architecture – Troubleshooting Gallery
+# AMA – Troubleshooting Gallery
 
 This folder contains categorized screenshots documenting real-time debugging, testing, and implementation efforts across my local AI memory system.
 
