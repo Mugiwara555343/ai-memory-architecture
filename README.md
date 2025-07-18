@@ -1,4 +1,4 @@
-# **AI Memory Architecture**
+# AMA `-` AI Memory Architecture🧠
 
 > A modular AI system that reflects, summarizes, and stylizes your memory — using local language models chained together in a persistent, privacy-first pipeline.
 
@@ -35,7 +35,7 @@ It helps coordinate the models and memory flow behind this repo.
 
 ---
 
-## 📊Visual Flow
+## 📊 Visual Flow
 
 [![Memory Architecture Simple Diagram](./docs/memory_flow_diagram_dark(2).png)](./docs/memory_flow_diagram_dark(2).png)
 
