@@ -54,7 +54,7 @@ In this short clip, I’m showing a key piece of my personal AI memory system: a
 
 Even though it’s a short clip, this small process is the backbone of a much bigger system — one where every note, thought, or reflection can be turned into searchable memory for future use in AI workflows.
 
-![Watcher Demo](docs/images/Parser_watcher_workflow - Trim.gif)
+![Watcher Demo](https://www.linkedin.com/posts/mauricio-ventura-52a14425a_memory-watcher-demo-30s-in-this-short-activity-7353286207721594880-LCYN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-8jfIBqFAGoRN8-16L1je2sJG2S2gbreA)
 
 ---
 
