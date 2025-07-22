@@ -43,7 +43,7 @@ It helps coordinate the models and memory flow behind this repo.
 ----
 ## 📽️ Watcher + Parser System (Live Demo)
 
-🔗 [▶️ Watch the 30s demo on YouTube](https://youtu.be/VBkNzzbGMlE)
+🔗 [▶️ Watch the demo on YouTube](https://youtu.be/VBkNzzbGMlE)
 
 This short video shows a foundational part of my personal AI memory system: a **live file watcher** that detects when a note is changed and automatically parses it into structured memory.
 
