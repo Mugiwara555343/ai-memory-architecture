@@ -40,6 +40,22 @@ It helps coordinate the models and memory flow behind this repo.
 
 *A visual of the full offline memory chain — from raw journal to reflective output*
 
+----
+
+## 🧠 Memory Watcher Demo (30s)
+
+In this short clip, I’m showing a key piece of my personal AI memory system: a background “watcher” that notices when I update a note — and then automatically transforms that update into structured memory.
+
+### What you’re seeing:
+- I start the watcher (a small Python script always running in the background)
+- I make a quick change to one of my `.md` memory files
+- That change is instantly picked up and parsed into a clean `.json` format
+- I open the `.json` file to show that the updated content is now saved in a structured, machine-readable format
+
+Even though it’s a short clip, this small process is the backbone of a much bigger system — one where every note, thought, or reflection can be turned into searchable memory for future use in AI workflows.
+
+![Watcher Demo](docs/images/Parser_watcher_workflow - Trim.gif)
+
 ---
 
 ## 🧠 AI Memory Workflow Showcase
