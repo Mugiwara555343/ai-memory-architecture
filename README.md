@@ -41,20 +41,21 @@ It helps coordinate the models and memory flow behind this repo.
 *A visual of the full offline memory chain — from raw journal to reflective output*
 
 ----
+## 📽️ Watcher + Parser System (Live Demo)
 
-## 🧠 Memory Watcher Demo (30s)
+🔗 [▶️ Watch the 30s demo on YouTube](https://youtu.be/VBkNzzbGMlE)
 
-In this short clip, I’m showing a key piece of my personal AI memory system: a background “watcher” that notices when I update a note — and then automatically transforms that update into structured memory.
+This short video shows a foundational part of my personal AI memory system: a **live file watcher** that detects when a note is changed and automatically parses it into structured memory.
 
-### What you’re seeing:
-- I start the watcher (a small Python script always running in the background)
-- I make a quick change to one of my `.md` memory files
-- That change is instantly picked up and parsed into a clean `.json` format
-- I open the `.json` file to show that the updated content is now saved in a structured, machine-readable format
+### What the demo shows:
+- I start the background watcher script
+- I edit a `.md` note file in real time
+- The system detects the change and triggers the parser
+- The note is converted into a `.json` file — ready to be used in AI workflows
 
-Even though it’s a short clip, this small process is the backbone of a much bigger system — one where every note, thought, or reflection can be turned into searchable memory for future use in AI workflows.
+Even though it’s a quick clip, this demonstrates an essential workflow: turning thoughts and notes into structured memory *without* needing to run anything manually.
 
-https://www.linkedin.com/posts/mauricio-ventura-52a14425a_memory-watcher-demo-30s-in-this-short-activity-7353286207721594880-LCYN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-8jfIBqFAGoRN8-16L1je2sJG2S2gbreA
+This automation is part of a larger vision — creating a persistent, personal AI that can recall, reflect, and grow with the context of everything I’ve written or captured.
 
 ---
 
