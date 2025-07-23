@@ -2,10 +2,6 @@
 
 > A modular AI system that reflects, summarizes, and stylizes your memory — using local language models chained together in a persistent, privacy-first pipeline. Using my personal or test made `md` files, feeding them in via my custom made `router.py`, while being stored in a Obsidian Vault.
 
-
-👉 [Try my custom GPT assistant](https://chatgpt.com/g/g-686d56d1a8048191bd32fdb5704d2eb4-memoryarchitect-gpt?model=o4-mini)
-It helps coordinate the models and memory flow behind this repo.
-
 ---
 
 ## 📚 Table of Contents
@@ -55,7 +51,15 @@ This automation is part of a larger vision — creating a persistent, personal A
 [![Memory Architecture Simple Diagram](./docs/memory_flow_diagram_dark(2).png)](./docs/memory_flow_diagram_dark(2).png)
 
 *A visual of the full offline memory chain — from raw journal to reflective output*
+
 ---
+
+👉 [Try my custom GPT assistant](https://chatgpt.com/g/g-686d56d1a8048191bd32fdb5704d2eb4-memoryarchitect-gpt?model=o4-mini)
+It helps coordinate the models and memory flow behind this repo.
+
+
+---
+
 
 ## 🧠 AI Memory Workflow Showcase
 
