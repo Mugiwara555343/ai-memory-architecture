@@ -14,11 +14,26 @@ It helps coordinate the models and memory flow behind this repo.
 - [Visual Flow](#-visual-flow)
 - [AI Memory Workflow Showcase](#-ai-memory-workflow-showcase)
 - [Folder Overview](#-folder-overview)
-- [How To Run](#-how-to-run)
 - [Example Output](#-example-output)
 - [Roadmap](#-roadmap)
 - [Tech Stack](#-tech-stack)
 - [Creator](#-creator)
+
+---
+
+## 📽️ Watcher + Parser System (Live Demo)
+
+🔗 [▶️ Watch the demo on YouTube](https://youtu.be/XArldnlAzNk)
+
+This short video shows a foundational part of my personal AI memory system: a **live file watcher** that detects when a note is changed and automatically parses it into structured memory.
+
+### What the demo shows:
+- I start the background watcher script
+- I edit\add\change a `.md` note file in real time
+- The system detects the change and triggers the parser
+- The note is converted into a `.json` file — ready to be used in AI workflows
+
+This automation is part of a larger vision — creating a persistent, personal AI that can recall, reflect, and grow with the context of everything I’ve written or captured.
 
 ---
 
@@ -32,31 +47,14 @@ It helps coordinate the models and memory flow behind this repo.
   * 🎭 MythoMax → Markdown stylization
 * Optionally pipes output into TTS (e.g., ElevenLabs) or future dashboards
 
----
+----
+
 
 ## 📊 Visual Flow
 
 [![Memory Architecture Simple Diagram](./docs/memory_flow_diagram_dark(2).png)](./docs/memory_flow_diagram_dark(2).png)
 
 *A visual of the full offline memory chain — from raw journal to reflective output*
-
-----
-## 📽️ Watcher + Parser System (Live Demo)
-
-🔗 [▶️ Watch the demo on YouTube](https://youtu.be/VBkNzzbGMlE)
-
-This short video shows a foundational part of my personal AI memory system: a **live file watcher** that detects when a note is changed and automatically parses it into structured memory.
-
-### What the demo shows:
-- I start the background watcher script
-- I edit a `.md` note file in real time
-- The system detects the change and triggers the parser
-- The note is converted into a `.json` file — ready to be used in AI workflows
-
-Even though it’s a quick clip, this demonstrates an essential workflow: turning thoughts and notes into structured memory *without* needing to run anything manually.
-
-This automation is part of a larger vision — creating a persistent, personal AI that can recall, reflect, and grow with the context of everything I’ve written or captured.
-
 ---
 
 ## 🧠 AI Memory Workflow Showcase
