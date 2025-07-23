@@ -42,7 +42,7 @@ This automation is part of a larger vision — creating a persistent, personal A
 * Watches `.md` logs for changes and parses them into structured `.json`
 * Routes parsed memory through a **multi-model LLM chain**:
 
-  * 🗣️ Capybara → tags, tone & emotions
+  * 🗣️ Capybara → tags, tone, & emotions
   * 🧠 Hermes → summary metadata
   * 🎭 MythoMax → Markdown stylization
 * Optionally pipes output into TTS (e.g., ElevenLabs) or future dashboards
