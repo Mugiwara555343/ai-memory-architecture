@@ -7,7 +7,8 @@ Each subfolder reflects a core system component, including prompt outputs, parse
 ## 📁 Folder Breakdown
 
 - **01_Parser_Troubleshoot** – Errors and fixes related to `parser_v2.py`, including markdown-to-JSON workflows.
-- **ai_output_troubleshoot** – Screenshots of parsed `.json` memory files, emotion tagging, and prompt-based formatting from Obsidian logs.
+- **02_Hardware_Fun** - I have been building my Main PC for over 8 years, and have been using old tech to delegate load from my Main Hub
+- **03_LLM_Troubleshoot** – Screenshots of parsed `.json` memory files, emotion tagging, and prompt-based formatting from Obsidian logs.
 - **gradio_troubleshooting** – Frontend logic issues, interface states, and model-routing problems tested through Gradio.
 - **n8n_automation_troubleshoot** – Attempts to automate LLM chaining using `n8n`, including webhook integration and failed deployment logs.
 - **scripts_random_troubleshoot** – Miscellaneous debugging steps from early testing phases, including PowerShell automation and parser triggers.
