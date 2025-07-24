@@ -55,7 +55,7 @@ This automation is part of a larger vision — creating a persistent, personal A
 ---
 
 👉 [Try my custom GPT assistant](https://chatgpt.com/g/g-686d56d1a8048191bd32fdb5704d2eb4-memoryarchitect-gpt?model=o4-mini)
-It helps coordinate the models and memory flow behind this repo.
+*It helps visualize and coordinate the models, memory flows, and the next stage if the current build*
 
 
 ---
