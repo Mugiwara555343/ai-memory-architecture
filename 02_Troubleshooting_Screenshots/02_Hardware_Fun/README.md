@@ -22,7 +22,7 @@ This folder contains hardware photos, BIOS captures, and hands-on diagnostics fr
 ### 🔥 Please don't judge my AIO placement(& the dust), my current case does not allow it within, so I had to improvise, and saw drastic temp drops
 [![Memory Architecture Simple Diagram](../02_Hardware_Fun/Images/IMG_7742.jpeg)](../02_Hardware_Fun/Images/IMG_7742.jpeg)
 
-## 📁 Folder Purpose
+### 📁 Folder Purpose
 
 * Used to visually document physical upgrades, port layouts, and diagnostic clues.
 * All images are original captures (phone camera or screenshots) during real troubleshooting or setup work.
