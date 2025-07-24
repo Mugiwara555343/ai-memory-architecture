@@ -8,7 +8,7 @@ This folder contains visual debugging records related to the **AI Memory Parser*
 
 ### 📄 Memory Watcher — Parsing Execution + Reflected Output
 
-![Memory Watcher Parsing + JSON Reflection](../ai_output_troubleshoot/Images/Screenshot-2025-06-24-1659222226.png)
+![Memory Watcher Parsing + JSON Reflection](../03_LLM_Troubleshoot/Images/Screenshot-2025-06-24-1659222226.png)
 
 _This capture shows:_
 - Real-time parsing of Markdown memory logs
