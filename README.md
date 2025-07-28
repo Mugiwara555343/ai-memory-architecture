@@ -13,7 +13,6 @@
 - [Example Output](#-example-output)
 - [Roadmap](#-roadmap)
 - [Tech Stack](https://github.com/Mugiwara555343/ai-memory-architecture/tree/main?tab=readme-ov-file#%EF%B8%8F%EF%B8%8F-tech-stack)
-- [Creator](#-creator)
 
 ---
 
