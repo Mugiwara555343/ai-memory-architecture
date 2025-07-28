@@ -19,7 +19,7 @@
 
 ## 📽️ Watcher + Parser System (Live Demo)
 
-🔗 [▶️ Watch the demo on YouTube](https://youtu.be/XArldnlAzNk)
+🔗 [▶️ Watch the demo on YouTube](https://www.youtube.com/watch?v=XArldnlAzNk&list=PLJZZVgAZEPgRKOkU9iObWylXccGp8RQKH&index=1)
 
 This short video shows a foundational part of my personal AI memory system: a **live file watcher** that detects when a note is changed and automatically parses it into structured memory.
 
