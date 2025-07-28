@@ -40,7 +40,7 @@ This automation is part of a larger vision — creating a persistent, personal A
   * 🗣️ Capybara → tags, tone, & emotions
   * 🧠 Hermes → summary metadata
   * 🎭 MythoMax → Markdown stylization
-* Optionally pipes output into TTS (e.g., ElevenLabs) or future dashboards
+* Optionally pipes output into TTS (e.g., ElevenLabs) or future dashboards (models are interchangeable)
 
 ----
 
