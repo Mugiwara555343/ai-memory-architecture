@@ -1,11 +1,11 @@
-"""local_llm_api_capy.py – Capybara 7‑B FastAPI wrapper
+"""local_llm_api_openchat.py – OpenChat‑3.5‑0106 FastAPI wrapper
 
 Run with:
-    GPU_LAYERS=-1 uvicorn orchestration_engines.local_llm_api_capy:app --port 5000
+    GPU_LAYERS=-1 uvicorn orchestration_engines.local_llm_api_openchat:app --port 5001
 
 Environment vars
 ----------------
-MODEL_PATH   override gguf path (otherwise models/capybara.Q6_K.gguf)
+MODEL_PATH   override gguf path (otherwise models/openchat-3.5-0106.Q5_K_M.gguf)
 GPU_LAYERS   -1 = full GPU, 0 = CPU, N = layers on GPU (default -1)
 MAX_TOKENS   default generation length (default 256)
 """
@@ -35,9 +35,9 @@ from llama_cpp import Llama
 from path_config import MODELS_DIR
 
 # ─── CONFIG ──────────────────────────────────────────────────────────
-DEFAULT_MODEL = MODELS_DIR / "capybara.Q6_K.gguf"
+DEFAULT_MODEL = MODELS_DIR / "openchat-3.5-0106.Q5_K_M.gguf"
 MODEL_PATH: Path = Path(os.getenv("MODEL_PATH", DEFAULT_MODEL))
-GPU_LAYERS: int = int(os.getenv("GPU_LAYERS", "-1"))  # -1 → push all layers
+GPU_LAYERS: int = int(os.getenv("GPU_LAYERS", "-1"))
 MAX_TOKENS: int = int(os.getenv("MAX_TOKENS", "256"))
 
 # ─── GLOBAL MODEL INSTANCE ───────────────────────────────────────────
@@ -49,7 +49,7 @@ logging.basicConfig(
     format="%(asctime)s %(levelname)s: %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
 )
-logger = logging.getLogger("CapybaraAPI")
+logger = logging.getLogger("OpenChatAPI")
 
 # ─── GPU MEMORY MANAGEMENT ───────────────────────────────────────────
 
@@ -86,7 +86,7 @@ def load_model() -> Llama:
         return llm
     
     try:
-        logger.info(f"🦘 Loading Capybara model: {MODEL_PATH.name}")
+        logger.info(f"🗣️ Loading OpenChat model: {MODEL_PATH.name}")
         logger.info(f"🔧 GPU layers: {GPU_LAYERS}, Max tokens: {MAX_TOKENS}")
         
         llm = Llama(
@@ -97,7 +97,7 @@ def load_model() -> Llama:
             verbose=False
         )
         
-        logger.info(f"✅ Capybara model loaded successfully (gpu_layers={GPU_LAYERS})")
+        logger.info(f"✅ OpenChat model loaded successfully (gpu_layers={GPU_LAYERS})")
         return llm
         
     except Exception as exc:
@@ -105,14 +105,14 @@ def load_model() -> Llama:
         raise
 
 # ─── APP SETUP ───────────────────────────────────────────────────────
-app = FastAPI(title="Capybara API", version="1.0.0")
+app = FastAPI(title="OpenChat API", version="1.0.0")
 
 @app.on_event("startup")
 async def startup_event():
     """Initialize model on startup"""
-    logger.info("🚀 Capybara API starting...")
+    logger.info("🚀 OpenChat API starting...")
     # Don't load model here - load it lazily on first request
-    logger.info("🚀 Capybara API started successfully (model will load on first request)")
+    logger.info("🚀 OpenChat API started successfully (model will load on first request)")
 
 @app.on_event("shutdown")
 async def shutdown_event():
@@ -136,7 +136,7 @@ async def chat(request: Request):  # type: ignore[valid-type]
         reply = output["choices"][0]["text"].strip()
 
         return {
-            "id": "chatcmpl-local-capy",
+            "id": "chatcmpl-local-openchat",
             "object": "chat.completion",
             "created": 0,
             "model": MODEL_PATH.name,
@@ -150,7 +150,7 @@ async def chat(request: Request):  # type: ignore[valid-type]
         }
 
     except Exception as e:  # noqa: BLE001
-        logger.exception("❌ Capybara inference error")
+        logger.exception("❌ OpenChat inference error")
         return JSONResponse(status_code=500, content={"error": str(e)})
 
 @app.get("/health")
@@ -168,4 +168,4 @@ async def health_check():
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="127.0.0.1", port=5000)
+    uvicorn.run(app, host="127.0.0.1", port=5001)
