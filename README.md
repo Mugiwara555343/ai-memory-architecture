@@ -3,7 +3,6 @@
 [![Status: Archived](https://img.shields.io/badge/status-archived-red.svg)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?logo=github)](https://opensource.org/licenses/MIT)
 ![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-00c7c7?logo=python)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/mauricio-ventura-52a14425a)
 [![PyPI](https://img.shields.io/pypi/v/note-to-json?logo=pypi&label=pypi)](https://ypi.org/project/note-to-json/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](https://github.com/Mugiwara555343)
 
